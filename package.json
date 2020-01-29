@@ -1,0 +1,9 @@
+{
+  "name": "countries-api",
+  "version": "1.0.0",
+  "description": "Front End Mentor Project",
+  "main": "index.js",
+  "repository": "ssh://git@github.com/acw-portfolio/rest-countries-api",
+  "author": "Anthony <anthonycweathersby@gmail.com>",
+  "license": "MIT"
+}
