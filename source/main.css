@@ -1,0 +1,19 @@
+body{
+	font-size:12px;
+}
+.country-list{
+	width : 100%;
+	display: grid;
+	grid-template-columns: 25%  25%  25%  25%
+}
+.country-entry{
+	font-size: 0.8em;
+	height: 200px;
+	margin:20px;
+	padding:5px;
+	border-radius:8px;
+	box-shadow: 2px 2px 8px rgb(120,120,120)
+}
+.country-flag{
+	height:30%;
+}

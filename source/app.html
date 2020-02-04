@@ -1,0 +1,31 @@
+<scope>
+	
+	<div id="search-box">
+		<input type="text" value=((search_name))>
+	</div>
+
+	<div id="filter-box">
+		<input type="text" value=((search_region))>
+	</div>
+
+	<script on=((loading))>
+		
+		const u = new url("https://restcountries.eu/rest/v2/all");
+		
+		countries = await (u).fetchJSON(false);
+
+	</script>
+
+	<container element=div class=country-list>
+		((countries))
+		<scope class="country-entry">
+			<img class="country-flag" src=((flag))>
+			<h2>((name))</h2>
+			
+			<p> Population: ((population.toString() )) </p>
+			<p> Region: ((region)) </p>
+			<p> Capital: ((capital))</p>
+		</scope>
+	</container>
+
+</scope>
